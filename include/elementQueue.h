@@ -6,7 +6,7 @@
 #include <chrono>
 
 /** 
-* A thread-safe queue that supports multi-threaded access
+* @brief A thread-safe queue that supports multi-threaded access
 * @tparam T Type of elements stored in the queue
 */
 template <typename T>
@@ -30,19 +30,19 @@ public:
     ~Queue();
     
     /**
-     * Pushes an element into the queue
+     * @brief Pushes an element into the queue
      * @param element The element to be added
     */
     void elementPush(T element);
     
     /**
-     * Pops an element from the queue, blocking if empty
+     * @brief Pops an element from the queue, blocking if empty
      * @return Removed element
     */
     T elementPop();
     
     /**
-     * Pops an element with a timeout.
+     * @brief Pops an element with a timeout.
      * @param milliseconds Maximum time to wait before throwing an exception
      * @return Removed element if available within timeout
      * @throws std::runtime_error if timeout occurs
@@ -50,19 +50,19 @@ public:
     T elementPopWithTimeout(int milliseconds);
     
     /**
-     * Returns the current number of elements in the queue
+     * @brief Returns the current number of elements in the queue
      * @return The number of elements
     */
     int elementCount();
     
     /**
-     * Returns the maximum size of the queue
+     * @brief Returns the maximum size of the queue
      * @return The queue capacity
     */
     int maxSize();
     
     /**
-     * Prints the current elements in the queue
+     * @brief Prints the current elements in the queue
     */
     void printQueue();
 
