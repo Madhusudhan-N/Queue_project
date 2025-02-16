@@ -21,20 +21,18 @@ CMake version 3.10 or higher : For building the project using CMake.
 
 ### Build Instructions
 
-### Clone the repo
-```bash
+###Clone the repo
+´´´bash
 git clone https://github.com/Madhusudhan-N/Queue_project.git
 
 cd Queue_project
-```
 
-### Create a build directory and compile the project
-```bash
+###Create a build directory and compile the project
+´´´bash
 mkdir build
 cd build
 cmake ..
 make -j
-```
 ### Running the project
 ```bash 
 #### execute main
