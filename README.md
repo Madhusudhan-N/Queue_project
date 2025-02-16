@@ -33,14 +33,13 @@ mkdir build
 cd build
 cmake ..
 make -j
-
 ### Running the project
-
-execute main
+```bash 
+#### execute main
 ./Queue_project
 
-execute all google tests
+#### execute all google tests
 ./test/run_tests
 
-execute a single google test
+##### execute a single google test
 ./test/run_tests --gtest_filter=QueueTest.PushPop
