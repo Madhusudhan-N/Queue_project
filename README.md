@@ -21,23 +21,27 @@ CMake version 3.10 or higher : For building the project using CMake.
 
 ### Build Instructions
 
-Clone the repo
-´git clone https://github.com/Madhusudhan-N/Queue_project.git´
-cd Queue_project
+### Clone the repo
+```bash
+git clone https://github.com/Madhusudhan-N/Queue_project.git
 
-Create a build directory and compile the project
-´´´mkdir build
+cd Queue_project
+```
+
+### Create a build directory and compile the project
+```bash
+mkdir build
 cd build
 cmake ..
-make -j´´´
-
+make -j
+```
 ### Running the project
-
-execute main
+```bash 
+#### execute main
 ./Queue_project
 
-execute all google tests
+#### execute all google tests
 ./test/run_tests
 
-execute a single google test
+##### execute a single google test
 ./test/run_tests --gtest_filter=QueueTest.PushPop
